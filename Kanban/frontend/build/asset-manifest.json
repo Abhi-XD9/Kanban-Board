@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Kanaban-Board/static/css/main.32b4e207.css",
+    "main.js": "/Kanaban-Board/static/js/main.2a93680f.js",
+    "static/js/453.8ab44547.chunk.js": "/Kanaban-Board/static/js/453.8ab44547.chunk.js",
+    "index.html": "/Kanaban-Board/index.html",
+    "main.32b4e207.css.map": "/Kanaban-Board/static/css/main.32b4e207.css.map",
+    "main.2a93680f.js.map": "/Kanaban-Board/static/js/main.2a93680f.js.map",
+    "453.8ab44547.chunk.js.map": "/Kanaban-Board/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32b4e207.css",
+    "static/js/main.2a93680f.js"
+  ]
+}
