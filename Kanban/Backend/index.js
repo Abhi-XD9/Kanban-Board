@@ -2,7 +2,7 @@ const express=require('express')
 const cors=require('cors')
 const app=express()
 const mysql=require('mysql2')
-const port= process.env.PORT || 9000
+const Port= process.env.PORT || 9000
 
 app.use(express.json());
 app.use(cors())
@@ -75,6 +75,6 @@ app.delete('/tasks/:id',(req,res)=>{
 })
 
 
-app.listen(port,()=>{
+app.listen(Port,()=>{
     console.log("Server Started")
 })
