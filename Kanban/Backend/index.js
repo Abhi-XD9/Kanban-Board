@@ -7,8 +7,6 @@ const Port= process.env.PORT || 9000
 app.use(express.json());
 app.use(cors())
 
-require('dotenv').config();
-
 const port = process.env.PORT;
 const dbHost = process.env.DB_HOST;
 const dbUser = process.env.DB_USER;
@@ -26,7 +24,7 @@ app.get('/tasks',(req,res)=>{
     const sql = "SELECT * FROM tasks";
     db.query(sql,(err,results)=>{
         if(err){
-            console.log(err);
+            console.log(err.code);
         };
         res.json(results);
     })
@@ -75,6 +73,10 @@ app.delete('/tasks/:id',(req,res)=>{
 })
 
 
-app.listen(Port,()=>{
+app.listen(Port,(err)=>{
+  if(err){
+    console.log(err)
+  }else{
     console.log("Server Started")
+  }
 })
