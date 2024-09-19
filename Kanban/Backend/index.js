@@ -7,17 +7,27 @@ const port= process.env.PORT || 9000
 app.use(express.json());
 app.use(cors())
 
-const db=mysql.createConnection({
-    host:'127.0.0.1',
-    user:'root',
-    password:'Abhi@123',
-    database:'kanban'
-})
+require('dotenv').config();
+
+const port = process.env.PORT;
+const dbHost = process.env.DB_HOST;
+const dbUser = process.env.DB_USER;
+const dbPassword = process.env.DB_PASSWORD;
+const dbDatabase = process.env.DB_DATABASE;
+
+const db = mysql.createConnection({
+  host: dbHost,
+  user: dbUser,
+  password: dbPassword,
+  database: dbDatabase
+});
 
 app.get('/tasks',(req,res)=>{
     const sql = "SELECT * FROM tasks";
     db.query(sql,(err,results)=>{
-        if(err) throw err;
+        if(err){
+            console.log(err);
+        };
         res.json(results);
     })
 })
