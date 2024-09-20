@@ -42,21 +42,6 @@ app.post('/tasks',(req,res)=>{
     })
 })
 
-app.put('/tasks/:id',(req,res)=>{
-    const {id}=req.params
-    const{title,description} =req.body
-    const VALUES = [id,title,description]
-    const sql = "UPDATE tasks SET `title` = ?, `description` = ? WHERE `id`=?"
-        db.query(sql,VALUES,(err,results)=>{
-        if(err){
-            console.log(err.code)
-            res.status(500).json({ message: 'Failed to Update task' });
-        };
-        res.json({message:"Task Updated Successfully"})
-    })
-
-})
-
 
 app.delete('/tasks/:id',(req,res)=>{
     const {id}=req.params
