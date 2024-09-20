@@ -35,18 +35,5 @@ To install the required dependencies and to run the project, run the following c
 9. Search for tasks by title using the search bar
 10. Delete tasks by clicking the delete button on the task card
 
-# Deployment
-This project is deployed on GitHub Pages. To deploy the project, follow these steps:
-
-1. Create a new repository on GitHub and initialize it with a README.md file.
-2. Clone the repository to your local machine: git clone https://github.com/abhi-xd9/Kanban-Board.git
-3. Navigate to the project folder: cd kanban-board
-4. Install dependencies: npm install
-5. Build the project: npm run build
-6. Deploy the project to GitHub Pages: npm run deploy
-
 # Contributing
 Contributions are welcome! Please submit a pull request with your changes.
-
-# GitHub Pages
-This project is deployed on GitHub Pages. You can view the live demo at: https://abhi-xd9.github.io/Kanban-Board
