@@ -58,6 +58,7 @@ const Home = () => {
       sortedColumn(review,setReview)
       sortedColumn(done,setDone)
     } else {
+      // Arranging Tasks Across the columns.
       const taskToMove = findTask(taskId, tasks, review, done, progress);
       if (taskToMove) {
         switch (source.droppableId) {
@@ -101,6 +102,7 @@ const Home = () => {
     return null;
   };
 
+  // tasks filtered by search input
   const Filteredtasks=(Tasks) => Tasks
     .filter((task) => task.title.toLowerCase().includes(search.toLowerCase()))
     .map((task) => (
@@ -117,6 +119,7 @@ const Home = () => {
       </ul>
     ));
 
+//defining droppable Task container
   const DroppableContainer = ({ droppableId, title, children }) => (
     <Droppable droppableId={droppableId}>
       {(provided) => (
