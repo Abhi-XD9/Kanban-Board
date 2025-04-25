@@ -48,5 +48,5 @@ This project is deployed on GitHub Pages. To deploy the project, follow these st
 # Contributing
 Contributions are welcome! Please submit a pull request with your changes.
 
-# GitHub Pages
-This project is deployed on GitHub Pages. You can view the live demo at: https://abhi-xd9.github.io/Kanban-Board
+# Netlify
+This project is deployed on Netlify. You can view the live demo at: kanban-board9.netlify.app
