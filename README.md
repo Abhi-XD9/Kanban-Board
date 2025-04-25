@@ -49,4 +49,4 @@ This project is deployed on GitHub Pages. To deploy the project, follow these st
 Contributions are welcome! Please submit a pull request with your changes.
 
 # Netlify
-This project is deployed on Netlify. You can view the live demo at: kanban-board9.netlify.app
+This project is deployed on Netlify. You can view the live demo at: [kanban-board9.netlify.app](https://kanban-board9.netlify.app/)
