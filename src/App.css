@@ -1,0 +1,291 @@
+#navbar{
+    background-color: white;
+    border:solid 0.5px rgb(225, 221, 221);
+    border-radius: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    padding: 10px 20px;
+}
+
+#navbar h1{
+    font-size:40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding-right: 20px;
+}
+
+#create-btn{
+    background-color: white;
+    font-size: 1.2rem;
+    border:solid 0.5px rgb(225, 221, 221);
+    border-radius: 7px;
+    padding: 5px 15px;
+    transition: all;
+    margin-left: 20px;
+    white-space: nowrap;
+}
+#create-btn:hover{
+    background-color: rgb(117, 112, 112);
+    color: white;
+}
+
+.search-btn{
+    background-color: white;
+    border:solid 0.5px rgb(140, 136, 136);
+    border-radius: 7px;
+    padding: 5px 15px;
+    transition: all;
+    margin-left: 10px;
+    white-space: nowrap;
+}
+.search-btn:hover{
+    background-color: rgb(117, 112, 112);
+    color: white;
+}
+
+#navbar .container-fluid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+form.d-flex {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form.d-flex input.form-control {
+    min-width: 150px;
+    max-width: 250px;
+}
+
+#container{
+    background-color: #f4f5f7;
+    border:solid 0.5px #dacece;
+    border-radius: 7px;
+    width:25%;
+    min-height:89vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#container h1{
+   align-self: center;
+   margin: 10px;
+   font-variant: small-caps;
+}
+#taskcard{
+  list-style-type: none;
+  border: solid 1px #9b8c8c;
+  border-radius: 10px;
+  padding: 8px;
+  background-color: #ffffff;
+  margin-bottom: 8px;
+  min-height: 90px;
+  margin-right: 10px;
+  margin-left: 10px;
+  cursor: pointer; 
+  display: block;
+  position: relative;
+}
+#taskcard:active {
+    background-color: #fff7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+#delete-btn{
+    background-color: white;
+    border:none;
+    border-radius: 7px;
+    font-size: small;
+    position: absolute;
+  bottom: 2px;
+  right: 2px;
+}
+
+#delete-btn:hover{
+    color: rgb(208, 34, 34);
+}
+
+#title{
+    font-size: large;
+}
+#descp{
+    font-size: small;
+}
+
+#form{
+    background-color: white;
+    align-self: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 40%;
+    align-content: center;
+    font-variant: small-caps;
+    padding: 1rem;
+}
+#form-title{
+    font-size: x-large;
+}
+#form-descp{
+    font-size: x-large;
+}
+
+#add-btn{
+    background-color: white;
+    border:solid 0.5px rgb(140, 136, 136);
+    border-radius: 7px;
+    padding: 5px;
+    transition: all;
+    margin-top: 10px;
+}
+#add-btn:hover{
+    background-color: rgb(117, 112, 112);
+    color: white;
+}
+#form h1{
+    font-variant: small-caps;
+    color: rgb(81, 75, 75) ;
+}
+/* Large screens: 901px and above */
+@media (min-width: 901px) {
+    .d-flex {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #container {
+      width: 23%;
+      min-height: 89vh;
+      margin: 0 0.5%;
+    }
+  }
+  
+  /* Medium screens: 500px to 900px */
+  @media (min-width: 500px) and (max-width: 900px) {
+    .d-flex {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    #container {
+      width: 48%;
+      min-height: 80vh;
+      margin: 1% 1%;
+    }
+    #taskcard {
+      margin-left: 6px;
+      margin-right: 6px;
+      padding: 7px;
+      min-height: 80px;
+    }
+    #title {
+      font-size: large;
+    }
+    #descp {
+      font-size: small;
+    }
+    #delete-btn {
+      font-size: small;
+    }
+  }
+  
+  /* Small screens: less than 500px */
+  @media (max-width: 499px) {
+    .d-flex {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      align-items: center;
+    }
+    #navbar {
+      padding: 10px;
+    }
+    #navbar h1 {
+      font-size: 24px;
+      text-align: center;
+      padding-right: 0;
+      margin-bottom: 10px;
+    }
+    #create-btn {
+      font-size: 1rem;
+      padding: 4px;
+      margin-top: 5px;
+      width: 100%;
+      margin-left: 0;
+    }
+    .search-btn {
+      font-size: 1rem;
+      padding: 4px;
+      margin-top: 5px;
+      width: 100%;
+      margin-left: 0;
+    }
+    #navbar .container-fluid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    form.d-flex {
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+    form.d-flex input.form-control {
+      width: 100%;
+      min-width: auto;
+      max-width: 100%;
+    }
+  }
+  .App > .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  #container {
+    background-color: #f4f5f7;
+    border: solid 0.5px #dacece;
+    border-radius: 7px;
+    min-height: 89vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 10px 0;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* Large screens: 901px and above */
+  @media (min-width: 901px) {
+    #container {
+      width: 23%;
+    }
+  }
+  
+  /* Medium screens: 500px to 900px */
+  @media (min-width: 500px) and (max-width: 900px) {
+    #container {
+      width: 48%;
+      min-height: fit-content;
+    }
+  }
+  
+  /* Small screens: less than 500px */
+  @media (max-width: 499px) {
+    #container {
+      width: 100%;
+      min-height: fit-content;
+    }
+  }

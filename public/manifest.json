@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Your App Name",
+    "version": "1.0",
+    "description": "A brief description of your app",
+    "icons": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4db7fe"
+  }
